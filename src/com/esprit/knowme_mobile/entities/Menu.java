@@ -57,6 +57,12 @@ public class Menu {
         is_expired = false;
         imageView = new ImageView();
     }
+    public Menu(String name) {
+        this.name = name;
+        imageView = new ImageView();
+
+
+    }
 
 
 
@@ -135,17 +141,17 @@ public class Menu {
 
     @Override
     public String toString() {
-        return "Menu{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", img='" + img + '\'' +
-                ", is_expired=" + is_expired +
-                ", date=" + creation_date +
-                ", expiration_date=" + expiration_date +
-                ", categorie=" + categorie +
-                '}';
-//        return name+"";
+//        return "Menu{" +
+//                "id=" + id +
+//                ", name='" + name + '\'' +
+//                ", description='" + description + '\'' +
+//                ", img='" + img + '\'' +
+//                ", is_expired=" + is_expired +
+//                ", date=" + creation_date +
+//                ", expiration_date=" + expiration_date +
+//                ", categorie=" + categorie +
+//                '}';
+        return name+"";
     }
     public void initializeImageView() {
         File file = new File("src/assets/" + this.img);

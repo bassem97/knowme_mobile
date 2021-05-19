@@ -17,6 +17,10 @@ public class Categorie {
         this.description = description;
         menus = new ArrayList<>();
     }
+    public Categorie(String nom) {
+        this.nom = nom;
+        menus = new ArrayList<>();
+    }
 
     public Integer getId() {
         return id;
@@ -52,12 +56,13 @@ public class Categorie {
 
     @Override
     public String toString() {
-        return "Categorie{" +
-                "id=" + id +
-                ", nom='" + nom + '\'' +
-                ", description='" + description + '\'' +
-                ", menus=" + menus +
-                '}';
+//        return "Categorie{" +
+//                "id=" + id +
+//                ", nom='" + nom + '\'' +
+//                ", description='" + description + '\'' +
+//                ", menus=" + menus +
+//                '}';
+        return nom+"";
 
     }
 }

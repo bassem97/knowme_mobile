@@ -13,6 +13,7 @@ import com.codename1.ui.Toolbar;
 import java.io.IOException;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.io.NetworkEvent;
+import com.esprit.knowme_mobile.GUI.Categorie.CategorieListForm;
 import com.esprit.knowme_mobile.entities.Categorie;
 import com.esprit.knowme_mobile.entities.Ingredient;
 import com.esprit.knowme_mobile.entities.Menu;
@@ -57,9 +58,10 @@ public class MyApplication {
             current.show();
             return;
         }
+        new CategorieListForm().show();
 
 
-        IngredientService.getInstance().delete(14);
+//        IngredientService.getInstance().delete(14);
 
 
 //        Menu menu = MenuService.getInstance().findAll().get(0);
