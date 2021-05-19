@@ -19,6 +19,7 @@ public class IngredientListForm extends Form {
         super("Ingredients", BoxLayout.y());
         ingredients = IngredientService.getInstance().findAll();
         addGUI();
+
     }
 
     private void addGUI() {
